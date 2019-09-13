@@ -9,8 +9,6 @@ def get_src_files():
     Returns a list of strings that contains paths to all the source (.py) files
     in the 'src' directory and its subdirectories. This is useful for getting a
     list of source files to upload to Neptune.
-
-    This function requires Python 3.5 or higher: https://docs.python.org/3.6/library/glob.html#glob.glob
     """
     # In order to do the globbing in a platform-independent manner, I'm using pathlib.
 
