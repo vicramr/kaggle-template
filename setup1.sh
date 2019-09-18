@@ -16,11 +16,11 @@ DIR="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"  # The -P optio
 # The above snippet assigned the absolute path to the parent directory of this file to DIR. Now we can actually cd.
 cd "$DIR"
 
-echo "[setup.sh] Now setting up conda environment."
+echo "[setup1.sh] Now setting up conda environment."
 conda env create -f environment.yml
 
-echo "[setup.sh] Now downloading dataset from Kaggle to directory 'data'."
+echo "[setup1.sh] Now downloading dataset from Kaggle to directory 'data'."
 # We need to make sure we're using the conda environmnt in order for 'kaggle' commands to work
 conda activate myenv || source activate myenv
-echo "[setup.sh] There may have been an error message just now, but it appears that we have been able to recover from it. Proceeding to download data."
+echo "[setup1.sh] There may have been an error message just now, but it appears that we have been able to recover from it. Proceeding to download data."
 kaggle competitions download {Competition Name} -p data  # TODO Replace placeholder

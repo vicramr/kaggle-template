@@ -12,12 +12,12 @@
 
 # Environment variable names are from here: https://github.com/Kaggle/kaggle-api#api-credentials
 export KAGGLE_USERNAME={Kaggle Username}  # TODO Replace placeholder
-echo "[setup.sh] Please enter the Kaggle API key."
+echo "[setup2.sh] Please enter the Kaggle API key."
 read -s kaggle_key  # The -s option stops the input from being echoed. https://www.gnu.org/software/bash/manual/html_node/Bash-Builtins.html
 export KAGGLE_KEY="$kaggle_key"
 
 # Neptune API token info is here: https://neptune-client.readthedocs.io/en/latest/tutorials/get-started.html#copy-api-token
-echo "[setup.sh] Please enter the Neptune API token."
+echo "[setup2.sh] Please enter the Neptune API token."
 read -s neptune_api_token
 export NEPTUNE_API_TOKEN="$neptune_api_token"
 
